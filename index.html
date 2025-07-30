@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funk&Arte - Início</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-lg">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fas fa-store text-warning me-2 fa-2x"></i>
+                <span class="fw-bold fs-4 text-white">Funk&Arte</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal"
+                            data-bs-target="#resetPasswordModal">Redefinir Senha</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ajuda.html">Ajuda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="meus-pedidos.html">Meus Pedidos</a>
+                    </li>
+                    <div class="form-check form-switch ms-3">
+                        <input class="form-check-input" type="checkbox" id="darkModeToggle"
+                            aria-label="Alternar Modo Escuro">
+                        <label class="form-check-label text-white" for="darkModeToggle"><i
+                                class="fas fa-moon"></i></label>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-warning text-dark rounded-pill ms-lg-3 px-4 py-2 active"
+                            aria-current="page" href="carrinho.html">
+                            <i class="fas fa-shopping-cart me-2"></i>Carrinho
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="mt-5 pt-5">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="novidades mc kevin - Copia.png" class="d-block w-100 img-fluid rounded-lg shadow-md"
+                        alt="Nova Coleção MC Kevin" style="height:400px;object-fit:cover;">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded-lg">
+                        <h5 class="display-4 fw-bold text-white">Nova Coleção MC Kevin</h5>
+                        <p class="lead">Confira as peças exclusivas inspiradas no ícone do funk.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="mc rian album.jpg" class="d-block w-100 img-fluid rounded-lg shadow-md"
+                        alt="Lançamento MC Ryan " style="height:400px;object-fit:cover;">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded-lg">
+                        <h5 class="display-4 fw-bold text-white">Lançamento MC Ryan </h5>
+                        <p class="lead">Ouça e garanta o novo álbum do MC Ryan!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="kondzilla.jpg" class="d-block w-100 img-fluid rounded-lg shadow-md"
+                        alt="Promoções Imperdíveis" style="height:400px;object-fit:cover;">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded-lg">
+                        <h5 class="display-4 fw-bold text-white">Promoções Imperdíveis</h5>
+                        <p class="lead">Aproveite descontos incríveis em toda a loja!</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-lg-9">
+                <h2 class="text-center mb-5 display-5 fw-bold text-primary-custom animate__animated animate__fadeInUp">
+                    Nossos Produtos</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col animate__animated animate__zoomIn">
+                        <div class="card h-100 shadow-lg rounded-xl product-card">
+                            <img src="camisa mc kevim.avif"
+                                class="card-img-top rounded-t-xl product-img-fixed product-img-uniform"
+                                alt="Camiseta MC Kevin">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold text-purple-700">Camiseta Exclusiva MC Kevin</h5>
+                                <p class="card-text text-gray-700">Conforto e estilo para os fãs do eterno MC Kevin.</p>
+                                <div class="mt-auto">
+                                    <p class="fs-4 fw-bold text-success">R$ 79,90</p>
+                                    <button class="btn btn-primary-custom w-100 add-to-cart-btn">
+                                        <i class="fas fa-cart-plus me-2"></i>Adicionar ao Carrinho
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col animate__animated animate__zoomIn animate__delay-1s">
+                        <div class="card h-100 shadow-lg rounded-xl product-card">
+                            <img src="mc rian album.jpg"
+                                class="card-img-top rounded-t-xl product-img-fixed product-img-uniform"
+                                alt="CD MC Ryan">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold text-purple-700">Álbum "Voz da Quebrada" - MC Ryan</h5>
+                                <p class="card-text text-gray-700">O mais novo sucesso do MC Ryan em formato físico.</p>
+                                <div class="mt-auto">
+                                    <p class="fs-4 fw-bold text-success">R$ 49,90</p>
+                                    <button class="btn btn-primary-custom w-100 add-to-cart-btn">
+                                        <i class="fas fa-cart-plus me-2"></i>Adicionar ao Carrinho
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col animate__animated animate__zoomIn animate__delay-2s">
+                        <div class="card h-100 shadow-lg rounded-xl product-card">
+                            <img src="kondzilla.jpg"
+                                class="card-img-top rounded-t-xl product-img-fixed product-img-uniform"
+                                alt="Boné Funk&Arte">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold text-purple-700">Boné Exclusivo Funk&Arte</h5>
+                                <p class="card-text text-gray-700">Mostre seu estilo com o boné oficial da Funk&Arte.
+                                </p>
+                                <div class="mt-auto">
+                                    <p class="fs-4 fw-bold text-success">
+                                        <span class="text-decoration-line-through text-muted me-2">R$ 59,90</span>
+                                        R$ 38,90
+                                    </p>
+                                    <button class="btn btn-primary-custom w-100 add-to-cart-btn">
+                                        <i class="fas fa-cart-plus me-2"></i>Adicionar ao Carrinho
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col animate__animated animate__zoomIn">
+                        <div class="card h-100 shadow-lg rounded-xl product-card">
+                            <img src="img moletm do funk.jpg"
+                                class="card-img-top rounded-t-xl product-img-fixed product-img-uniform"
+                                alt="Moletom Funk">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold text-purple-700">Moletom "Batida Perfeita"</h5>
+                                <p class="card-text text-gray-700">Conforto e batida no seu dia a dia.</p>
+                                <div class="mt-auto">
+                                    <p class="fs-4 fw-bold text-success">R$ 129,90</p>
+                                    <button class="btn btn-primary-custom w-100 add-to-cart-btn">
+                                        <i class="fas fa-cart-plus me-2"></i>Adicionar ao Carrinho
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col animate__animated animate__zoomIn animate__delay-1s">
+                        <div class="card h-100 shadow-lg rounded-xl product-card">
+                            <img src="download.jpg"
+                                class="card-img-top rounded-t-xl product-img-fixed product-img-uniform"
+                                alt="Poster Artístico">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold text-purple-700">Poster Artístico "Vibe do Gueto"</h5>
+                                <p class="card-text text-gray-700">Decore seu espaço com arte inspirada no funk.</p>
+                                <div class="mt-auto">
+                                    <p class="fs-4 fw-bold text-success">R$ 39,90</p>
+                                    <button class="btn btn-primary-custom w-100 add-to-cart-btn">
+                                        <i class="fas fa-cart-plus me-2"></i>Adicionar ao Carrinho
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col animate__animated animate__zoomIn animate__delay-2s">
+                        <div class="card h-100 shadow-lg rounded-xl product-card">
+                            <img src="bone.png" class="card-img-top rounded-t-xl product-img-fixed product-img-uniform"
+                                alt="Fone de Ouvido">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold text-purple-700">Fone de Ouvido High Bass</h5>
+                                <p class="card-text text-gray-700">Ouça suas músicas favoritas com a melhor qualidade de
+                                    som.</p>
+                                <div class="mt-auto">
+                                    <p class="fs-4 fw-bold text-success">R$ 189,90</p>
+                                    <button class="btn btn-primary-custom w-100 add-to-cart-btn">
+                                        <i class="fas fa-cart-plus me-2"></i>Adicionar ao Carrinho
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .product-img-uniform {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            object-position: center;
+        }
+    </style>
+
+    <section class="container my-5 py-5 bg-light rounded-xl shadow-lg">
+        <h2 class="text-center mb-5 display-5 fw-bold text-primary-custom animate__animated animate__fadeInUp">
+            Recomendado para Você</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col animate__animated animate__fadeInUp">
+                <div class="card h-100 shadow-sm rounded-xl product-card">
+                    <img src="Pulseira Estilo Funk.webp" class="card-img-top rounded-t-xl recommended-img"
+                        alt="Pulseira Estilo">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold text-purple-700">Pulseira Estilo Funk</h5>
+                        <p class="card-text text-gray-700">Acessório que complementa seu visual.</p>
+                        <div class="mt-auto">
+                            <p class="fs-5 fw-bold text-success">R$ 29,90</p>
+                            <button class="btn btn-outline-primary-custom w-100 btn-sm">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col animate__animated animate__fadeInUp animate__delay-1s">
+                <div class="card h-100 shadow-sm rounded-xl product-card">
+                    <img src="Capa de Celular Estilo FunkCapa de Celular Estilo Funk.jpg"
+                        class="card-img-top rounded-t-xl recommended-img" alt="Capa de Celular">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold text-purple-700">Capa de Celular "Vibe Positiva"</h5>
+                        <p class="card-text text-gray-700">Proteja seu celular com estilo.</p>
+                        <div class="mt-auto">
+                            <p class="fs-5 fw-bold text-success">R$ 45,00</p>
+                            <button class="btn btn-outline-primary-custom w-100 btn-sm">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col animate__animated animate__fadeInUp animate__delay-2s">
+                <div class="card h-100 shadow-sm rounded-xl product-card">
+                    <img src="Disco de Vinil Clássicos do Funk.jpg" class="card-img-top rounded-t-xl recommended-img"
+                        alt="Disco de Vinil">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold text-purple-700">Disco de Vinil Clássicos do Funk</h5>
+                        <p class="card-text text-gray-700">Para os amantes da música analógica.</p>
+                        <div class="mt-auto">
+                            <p class="fs-5 fw-bold text-success">R$ 99,90</p>
+                            <button class="btn btn-outline-primary-custom w-100 btn-sm">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col animate__animated animate__fadeInUp animate__delay-3s">
+                <div class="card h-100 shadow-sm rounded-xl product-card">
+                    <img src="bem bolado mc kevin.jpg" class="card-img-top rounded-t-xl recommended-img"
+                        alt="Chaveiro Personalizado">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold text-purple-700">Bem bolado Personalizado MC Kevin</h5>
+                        <p class="card-text text-gray-700">Leve seu ídolo para onde for.</p>
+                        <div class="mt-auto">
+                            <p class="fs-5 fw-bold text-success">R$ 19,90</p>
+                            <button class="btn btn-outline-primary-custom w-100 btn-sm">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        .recommended-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            object-position: center;
+        }
+    </style>
+
+    <section class="container my-5 py-5 bg-light rounded-xl shadow-lg">
+        <h2 class="text-center mb-5 display-5 fw-bold text-primary-custom animate__animated animate__fadeInUp">Mídia
+            Exclusiva</h2>
+        <div class="row justify-content-center g-4">
+            <div class="col-12 col-md-8 col-lg-6 animate__animated animate__fadeInLeft">
+                <div class="ratio ratio-16x9 shadow-lg rounded-xl">
+                    <iframe src="invideo-ai-720 Transforme Seu Estilo com Funk&Arte – En 2025-07-30.mp4"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen class="rounded-xl"></iframe>
+                </div>
+                <p class="text-center mt-3 text-muted">Assista ao nosso !</p>
+            </div>
+
+
+            <div class="col-12 col-md-8 col-lg-6 animate__animated animate__fadeInRight">
+                <div class="d-flex flex-column align-items-center bg-white p-4 rounded-xl shadow-md">
+                    <h4 class="text-primary-custom mb-3">Ouça Funk&Arte </h4>
+                    <audio controls class="w-100 rounded-lg shadow-sm">
+                        <source src="Funk&Arte.wav" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <p class="text-center mt-3 text-muted">Curta o som enquanto explora a loja!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4 mt-auto shadow-lg">
+        <div class="container text-center">
+            <p class="mb-0">© 2025 Funk&Arte. Todos os direitos reservados.</p>
+            <div class="mt-2">
+                <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-xl shadow-lg">
+                <div class="modal-header bg-primary-custom text-white rounded-t-xl">
+                    <h5 class="modal-title fw-bold" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label fw-bold">E-mail</label>
+                            <input type="email" class="form-control rounded-lg" id="loginEmail"
+                                placeholder="seu.email@example.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label fw-bold">Senha</label>
+                            <input type="password" class="form-control rounded-lg" id="loginPassword"
+                                placeholder="Sua senha" required>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary-custom rounded-pill fw-bold">Entrar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center border-top-0">
+                    <p class="mb-0 text-muted">Esqueceu sua senha? <a href="#" data-bs-toggle="modal"
+                            data-bs-target="#resetPasswordModal" data-bs-dismiss="modal"
+                            class="text-primary-custom fw-bold">Redefinir Senha</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="resetPasswordModal" tabindex="-1" aria-labelledby="resetPasswordModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-xl shadow-lg">
+                <div class="modal-header bg-secondary-custom text-white rounded-t-xl">
+                    <h5 class="modal-title fw-bold" id="resetPasswordModalLabel">Redefinir Senha</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form id="resetPasswordForm">
+                        <div class="mb-3">
+                            <label for="resetEmail" class="form-label fw-bold">E-mail</label>
+                            <input type="email" class="form-control rounded-lg" id="resetEmail"
+                                placeholder="seu.email@example.com" required>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-secondary-custom rounded-pill fw-bold">Enviar Link de
+                                Redefinição</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center border-top-0">
+                    <p class="mb-0 text-muted">Lembrou sua senha? <a href="#" data-bs-toggle="modal"
+                            data-bs-target="#loginModal" data-bs-dismiss="modal"
+                            class="text-secondary-custom fw-bold">Fazer Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <style>
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        .dark-mode .card,
+        .dark-mode .modal-content {
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+        }
+
+        .dark-mode .navbar,
+        .dark-mode footer {
+            background-color: #000 !important;
+        }
+
+        .dark-mode .card-header {
+            background-color: #2a2a2a !important;
+        }
+
+        .dark-mode .list-group-item {
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+        }
+
+        .dark-mode .btn-outline-primary-custom {
+            border-color: #bb86fc;
+            color: #bb86fc;
+        }
+
+        .dark-mode .btn-outline-primary-custom:hover {
+            background-color: #bb86fc;
+            color: #000;
+        }
+    </style>
+    <script>
+        const toggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+
+        // Verifica se o usuário já ativou o modo escuro antes
+        if (localStorage.getItem('darkMode') === 'true') {
+            body.classList.add('dark-mode');
+            toggle.checked = true;
+        }
+
+        toggle.addEventListener('change', () => {
+            body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
+        });
+    </script>
+</body>
+
+</html>
